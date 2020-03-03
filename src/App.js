@@ -11,6 +11,8 @@ import {
  import TequilaList from './components/TequilaList.js';
  import ScotchList from './components/ScotchList.js';
  import WhiskeyList from './components/WhiskeyList.js';
+ import PopularList from './components/Popular.js';
+ import RandomList from './components/Random.js';
 
 export default class App extends Component {
   render() {
@@ -18,6 +20,8 @@ export default class App extends Component {
       <div>
         <Router>
           <Switch>
+            <Route exact path='/random' component={RandomList}/>
+            <Route exact path='/popular' component={PopularList}/>
             <Route exact path='/vodka' component={VodkaList}/>
             <Route exact path='/gin' component={GinList}/>
             <Route exact path='/tequila' component={TequilaList}/>
