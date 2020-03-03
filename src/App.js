@@ -2,21 +2,19 @@ import React,  { Component } from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Link,
+  //Link,
   Switch,
 } from 'react-router-dom';
-// import './App.css';
-// import Header from './Header.js';
-// import Search from './Search';
-// import Favorites from './Favorites.js';
-// import Login from './Login';
-// import PrivateRoute from './PrivateRoute';
+ import VodkaList from './components/VodkaList.js';
+
 export default class App extends Component {
   render() {
     return (
       <div>
         <Router>
-          
+          <Switch>
+            <Route exact path='/list' component={VodkaList}/>
+          </Switch>
         </Router>
       </div>
     );

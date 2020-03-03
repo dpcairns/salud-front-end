@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import request from 'superagent';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
+import CocktailItem from './CocktailItem';
 
 const getVodkaList = () => request.get(`https://mighty-plateau-34350.herokuapp.com/vodka`);
 
@@ -9,11 +10,13 @@ const getVodkaList = () => request.get(`https://mighty-plateau-34350.herokuapp.c
 export default class VodkaList extends Component {
     state = {
         id: [],
+        cocktail:[]
     }
 async componentDidMount() {
     const data = await getVodkaList()
+    console.log(data.body)
     this.setState({
-        id: data.body.drinks
+        cocktail: data.body
     })
 }
 
@@ -21,6 +24,13 @@ async componentDidMount() {
         return (
             <div>
                 <h2>Vodka Cocktails for fun and pleasure</h2>
+                <ul className='vodka-list'>
+            {
+                this.state.cocktail.map(cocktail => 
+                    <CocktailItem cocktail={cocktail} />
+                    )
+            }
+                </ul>
             </div>
         )
     }
