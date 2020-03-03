@@ -18,7 +18,7 @@ export default class SaludLogin extends Component {
         })
 
         localStorage.setItem('user', JSON.stringify(signIn.body))
-        this.props.history.push('/');
+        //this.props.history.push('/');
     }
 
     handleSignUp = async () => {
@@ -28,7 +28,7 @@ export default class SaludLogin extends Component {
         })
 
         localStorage.setItem('user', JSON.stringify(signUp.body))
-        this.props.history.push('/');
+        //this.props.history.push('/');
         ;
     }
 
