@@ -13,9 +13,9 @@ export default withRouter(class favoritesList extends Component {
     }
 
     renderButton = (drink) => {
-        const onFavoritesList = this.props.favorites.find(cocktail => drink.name === cocktail.name);
+        const onFavoritesList = this.props.favorites.find(favorites => drink.name === favorites.name);
         if (!onFavoritesList) {
-            return <button onClick={(e)=> this.makeFavorite(drink)}Favorite/>
+            return <button onClick={(e)=> this.makeFavorite(drink)}Favorite>I like this Drink</button>
         }
         return <span>🍸</span>
     }
@@ -24,7 +24,7 @@ export default withRouter(class favoritesList extends Component {
         return(
             <div>
                 {
-                    this.props.cocktails.map(drink => <div key={drink.name} className="drink-box">
+                    this.props.favorites.map(drink => <div key={drink.name} className="drink-box">
                         <div>{drink.name}</div>
                         <div>{drink.image}</div>
                         {
