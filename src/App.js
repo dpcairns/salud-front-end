@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Link,
   Switch,
   Redirect
 } from 'react-router-dom';
@@ -42,11 +41,7 @@ export default class App extends Component {
           }/>
           <Route exact path='/login' component={SaludLogin}/>
           <Route exact path='/favorites' component={favoritesList}/>
-
           </Switch>
-
-            <Link to="/favorites">Favorites</Link>
-            <Link to="/login">Login</Link>
         </Router>
       </div>
     );
