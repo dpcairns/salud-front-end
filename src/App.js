@@ -18,6 +18,8 @@ import {
 import Home from './Home.js';
 //import PrivateRoute from './PrivateRoute.js';
 import idList from './components/idList.js'
+import PrivateRoute from './PrivateRoute.js';
+import myImage from './assets/logo.png';
 
 
 const isLoggedIn = () => JSON.parse(localStorage.getItem('user'));
@@ -32,6 +34,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
+<img className='home-img' src={myImage} alt=''/>
         <Router>
           <Switch>
             <Route exact path='/id/:myDrink' component={idList}/>
@@ -48,6 +51,8 @@ export default class App extends Component {
             ? <Home {...historyprops}/>
             : <Redirect to='login' />
           }/>
+
+
           <Route exact path='/login' render={(props) => <SaludLogin {...props} setUser={ this.setUser } user={this.state.user }/>}/>
           <Route exact path='/favorites' component={favoritesList}/>
           </Switch>
