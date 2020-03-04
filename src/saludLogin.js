@@ -12,6 +12,7 @@ export default class SaludLogin extends Component {
     }
 
     handleSignIn = async () => {
+      try {
         const signIn = await request.post(`https://mighty-plateau-34350.herokuapp.com/auth/signin`, {
             email: this.state.usernameSignIn,
             password: this.state.passwordSignIn,
@@ -19,6 +20,10 @@ export default class SaludLogin extends Component {
 
         localStorage.setItem('user', JSON.stringify(signIn.body))
         this.props.history.push('/');
+
+      } catch (e) {
+        console.log(e);
+      } 
     }
 
     handleSignUp = async () => {

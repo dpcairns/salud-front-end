@@ -3,9 +3,6 @@ import request from 'superagent';
 //import { Link } from 'react-router-dom';
 import CocktailItem from './CocktailItem';
 
-const user = JSON.parse(localStorage.getItem('user'))
-const getGinList = () => request.get(`https://mighty-plateau-34350.herokuapp.com/gin`)
-    .set('Authorization', user.token);
 
 
 
@@ -14,8 +11,13 @@ export default class GinList extends Component {
         id: [],
         cocktail:[]
     }
-async componentDidMount() {
-    const data = await getGinList()
+    async componentDidMount() {
+
+        const user = JSON.parse(localStorage.getItem('user'))
+        const getGinList = () => request.get(`https://mighty-plateau-34350.herokuapp.com/gin`)
+            .set('Authorization', user.token);
+            
+        const data = await getGinList()
     console.log(data.body)
     this.setState({
         cocktail: data.body

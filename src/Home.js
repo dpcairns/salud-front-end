@@ -6,7 +6,12 @@ import {
 //import Header from './Header.js';
 import RandomList from './components/Random.js'
 
+
 export default class Home extends Component {
+    // logout = () => {
+    //     localStorage.clear('token');
+    //     this.props.history.push('/');
+    // }
     render() {
         return(
             <div>
@@ -19,7 +24,12 @@ export default class Home extends Component {
                 <Link to='/rum'>Rum</Link>
                 <RandomList />
                 </Router>
+
+        {/* <button onClick={this.logout()}> Log Out</button> */}
+
             </div>
         )
     }
+    
+
 }

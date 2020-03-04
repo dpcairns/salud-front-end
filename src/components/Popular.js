@@ -3,18 +3,20 @@ import request from 'superagent';
 //import { Link } from 'react-router-dom';
 import CocktailItem from './CocktailItem';
 
-const user = JSON.parse(localStorage.getItem('user'))
-
-const getPopularList = () => request.get(`https://mighty-plateau-34350.herokuapp.com/popular`)
-    .set('Authorization', user.token);
 
 export default class PopularList extends Component {
     state = {
         id: [],
         cocktail:[]
     }
-async componentDidMount() {
-    const data = await getPopularList()
+    async componentDidMount() {
+
+        const user = JSON.parse(localStorage.getItem('user'))
+        
+        const getPopularList = () => request.get(`https://mighty-plateau-34350.herokuapp.com/popular`)
+            .set('Authorization', user.token);
+            
+        const data = await getPopularList()
     console.log(data.body)
     this.setState({
         cocktail: data.body
