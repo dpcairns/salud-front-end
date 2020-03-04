@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import request from 'superagent';
 //import { Link } from 'react-router-dom';
 import CocktailItem from './CocktailItem';
-
-
+import ginImage from '../assets/gin.png';
 
 
 export default class GinList extends Component {
