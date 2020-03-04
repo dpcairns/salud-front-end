@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import request from 'superagent';
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import CocktailItem from './CocktailItem';
 
 //const user = JSON.parse(localStorage.getItem('user'))
@@ -33,12 +33,18 @@ render() {
                 <h2>Random Cocktails to amaze your friends</h2>
                 <ul className='random-list'>
             {
-                this.state.cocktail.map(cocktail => 
-                    <CocktailItem cocktail={cocktail} />
-                    )
+                this.state.cocktail.map(cocktail => (
+                    <div key={cocktail.id} to={`/id/${cocktail.id}`} onClick={()=> this.props.history.push(`/id/${cocktail.id}`)}> 
+            
+                    <CocktailItem cocktail={cocktail}/>
+                    </div>
+                )
+                )   
                 }
                 </ul>
             </div>
         )
     }
 }
+
+{/* <CocktailItem cocktail={cocktail} onClick={this.props.history.push(`/id/${cocktail.id}`)}/> */}
