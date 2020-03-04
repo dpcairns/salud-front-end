@@ -48,7 +48,7 @@ export default class DrinkId extends Component {
                 </li> 
                     </ul>
                 <p>
-                {cocktail.instructions}
+                {cocktail.Instructions}
                 </p>
 
             </div>
