@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import request from 'superagent';
 require('dotenv').config();
 
+
 export default class SaludLogin extends Component {
 //set state to empty user
     state = {
@@ -41,17 +42,21 @@ export default class SaludLogin extends Component {
     render() {
         console.log(this.state);
         return (
-            <div>
-                <input value={ this.state.usernameSignUp} onChange={(e) => this.setState({ usernameSignUp: e.target.value})} />
-                <input value={ this.state.passwordSignUp} onChange={(e) => this.setState({ passwordSignUp: e.target.value})} />
+            <div className='login-box'>
 
-                <button onClick={ this.handleSignUp }>Sign up</button>  
+            <div className='textbox'>
+                
+                <input className='sign-up' placeholder='email' value={ this.state.usernameSignUp} onChange={(e) => this.setState({ usernameSignUp: e.target.value})} />
+                <input className='sign-up-pass' placeholder='password' value={ this.state.passwordSignUp} onChange={(e) => this.setState({ passwordSignUp: e.target.value})} />
+
+                <button className='btn' onClick={ this.handleSignUp }>Sign up</button>  
                 <br/>
-                <input value={ this.state.usernameSignIn} onChange={(e) => this.setState({ usernameSignIn: e.target.value})} />
-                <input value={ this.state.passwordSignIn} onChange={(e) => this.setState({ passwordSignIn: e.target.value})} />
+                <input className='sign-in' placeholder='email' value={ this.state.usernameSignIn} onChange={(e) => this.setState({ usernameSignIn: e.target.value})} />
+                <input className='sign-in-pass' placeholder='password' value={ this.state.passwordSignIn} onChange={(e) => this.setState({ passwordSignIn: e.target.value})} />
 
-                <button onClick={this.handleSignIn}>Sign in</button>     
+                <button className='btn' onClick={this.handleSignIn}>Sign in</button>     
    
+                </div>
                 </div>
         )
     }

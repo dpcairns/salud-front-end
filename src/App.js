@@ -17,6 +17,7 @@ import {
  import favoritesList from './components/favoriteslist.js';
 import Home from './Home.js';
 import PrivateRoute from './PrivateRoute.js';
+import myImage from './assets/logo.png';
 
 
 const isLoggedIn = () => JSON.parse(localStorage.getItem('user'));
@@ -31,6 +32,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
+<img className='home-img' src={myImage} alt=''/>
         <Router>
           <Switch>
             <Route exact path='/random' component={RandomList}/>
@@ -46,6 +48,8 @@ export default class App extends Component {
             ? <Home />
             : <Redirect to='login' />
           }/>
+
+
           <Route exact path='/login' render={(props) => <SaludLogin {...props} setUser={ this.setUser } user={this.state.user }/>}/>
           <Route exact path='/favorites' component={favoritesList}/>
           </Switch>
