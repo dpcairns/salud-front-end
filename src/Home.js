@@ -22,10 +22,10 @@ export default class Home extends Component {
                 <Link to='/scotch'>Scotch</Link>
                 <Link to='/whiskey'>Whiskey</Link>
                 <Link to='/rum'>Rum</Link>
-                <RandomList />
+                <RandomList {...this.props}/>
                 </Router>
 
-        {/* <button onClick={this.logout()}> Log Out</button> */}
+         {/* <button onClick={this.logout()}> Log Out</button> */}
 
             </div>
         )

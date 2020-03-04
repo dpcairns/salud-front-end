@@ -16,6 +16,8 @@ import {
  import SaludLogin from './saludLogin.js';
  import favoritesList from './components/favoriteslist.js';
 import Home from './Home.js';
+//import PrivateRoute from './PrivateRoute.js';
+import idList from './components/idList.js'
 import PrivateRoute from './PrivateRoute.js';
 import myImage from './assets/logo.png';
 
@@ -35,6 +37,7 @@ export default class App extends Component {
 <img className='home-img' src={myImage} alt=''/>
         <Router>
           <Switch>
+            <Route exact path='/id/:myDrink' component={idList}/>
             <Route exact path='/random' component={RandomList}/>
             <Route exact path='/popular' component={PopularList}/>
             <Route exact path='/vodka' component={VodkaList}/>
@@ -43,9 +46,9 @@ export default class App extends Component {
             <Route exact path='/rum' component={RumList}/>
             <Route exact path='/scotch' component={ScotchList}/>
             <Route exact path='/whiskey' component={WhiskeyList}/>
-            <Route exact path='/' render={() =>
+            <Route exact path='/' render={(historyprops) =>
             isLoggedIn()
-            ? <Home />
+            ? <Home {...historyprops}/>
             : <Redirect to='login' />
           }/>
 
