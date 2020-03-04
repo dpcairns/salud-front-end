@@ -10,9 +10,6 @@ export default class CocktailItem extends Component {
                     {cocktail.name}
                 </h2>
                 <img src ={cocktail.image} alt=""/>
-                <p>
-                    {cocktail.id}
-                </p>
 
             </div>
         )
