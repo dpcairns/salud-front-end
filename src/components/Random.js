@@ -3,8 +3,10 @@ import request from 'superagent';
 //import { Link } from 'react-router-dom';
 import CocktailItem from './CocktailItem';
 
-const getRandomList = () => request.get(`https://mighty-plateau-34350.herokuapp.com/random`);
+const user = JSON.parse(localStorage.getItem('user'))
 
+const getRandomList = () => request.get(`https://mighty-plateau-34350.herokuapp.com/random`)
+    .set('Authorization', user.token);
 
 
 export default class RandomList extends Component {

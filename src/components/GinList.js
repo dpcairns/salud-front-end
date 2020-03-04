@@ -3,7 +3,9 @@ import request from 'superagent';
 //import { Link } from 'react-router-dom';
 import CocktailItem from './CocktailItem';
 
-const getGinList = () => request.get(`https://mighty-plateau-34350.herokuapp.com/gin`);
+const user = JSON.parse(localStorage.getItem('user'))
+const getGinList = () => request.get(`https://mighty-plateau-34350.herokuapp.com/gin`)
+    .set('Authorization', user.token);
 
 
 

@@ -3,7 +3,9 @@ import request from 'superagent';
 //import { Link } from 'react-router-dom';
 import CocktailItem from './CocktailItem';
 
-const getScotchList = () => request.get(`https://mighty-plateau-34350.herokuapp.com/scotch`);
+const user = JSON.parse(localStorage.getItem('user'))
+const getScotchList = () => request.get(`https://mighty-plateau-34350.herokuapp.com/scotch`)
+    .set('Authorization', user.token);
 
 
 

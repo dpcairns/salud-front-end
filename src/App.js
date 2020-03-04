@@ -16,11 +16,18 @@ import {
  import SaludLogin from './saludLogin.js';
  import favoritesList from './components/favoriteslist.js';
 import Home from './Home.js';
+import PrivateRoute from './PrivateRoute.js';
 
- const isLoggedIn = () => JSON.parse(localStorage.getItem('user'));
- 
+
+const isLoggedIn = () => JSON.parse(localStorage.getItem('user'));
+
 
 export default class App extends Component {
+  state = { user: null };
+      
+  setUser = user => {
+      this.setState({ user: user.body });
+  }
   render() {
     return (
       <div>
@@ -39,7 +46,7 @@ export default class App extends Component {
             ? <Home />
             : <Redirect to='login' />
           }/>
-          <Route exact path='/login' component={SaludLogin}/>
+          <Route exact path='/login' render={(props) => <SaludLogin {...props} setUser={ this.setUser } user={this.state.user }/>}/>
           <Route exact path='/favorites' component={favoritesList}/>
           </Switch>
         </Router>

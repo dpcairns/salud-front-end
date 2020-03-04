@@ -12,27 +12,29 @@ export default class SaludLogin extends Component {
     }
 
     handleSignIn = async () => {
-        const signIn = await request.post(`https://mighty-plateau-34350.herokuapp.com/signin`, {
+        const signIn = await request.post(`https://mighty-plateau-34350.herokuapp.com/auth/signin`, {
             email: this.state.usernameSignIn,
             password: this.state.passwordSignIn,
-        })
+        }).set('Content-Type', 'application/x-www-form-urlencoded')
 
         localStorage.setItem('user', JSON.stringify(signIn.body))
-        //this.props.history.push('/');
+        this.props.history.push('/');
     }
 
     handleSignUp = async () => {
-        const signUp = await request.post(`https://mighty-plateau-34350.herokuapp.com/signup`, {
+        console.log(this.state.usernameSignUp);
+        const signUp = await request.post(`https://mighty-plateau-34350.herokuapp.com/auth/signup`, {
             email: this.state.usernameSignUp,
             password: this.state.passwordSignUp,
-        })
+        }).set('Content-Type', 'application/x-www-form-urlencoded')
 
         localStorage.setItem('user', JSON.stringify(signUp.body))
-        //this.props.history.push('/');
+        this.props.history.push('/');
         ;
     }
 
     render() {
+        console.log(this.state);
         return (
             <div>
                 <input value={ this.state.usernameSignUp} onChange={(e) => this.setState({ usernameSignUp: e.target.value})} />
