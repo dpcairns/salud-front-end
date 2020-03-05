@@ -28,11 +28,15 @@ export default class PopularList extends Component {
             <div>
                 <h2>Popular cocktails to be the life of the party</h2>
                 <ul className='popular-list'>
-            {
-                this.state.cocktail.map(cocktail => 
-                    <CocktailItem cocktail={cocktail} />
-                    )
-            }
+                {
+                        this.state.cocktail.map(cocktail => (
+                            <div key={cocktail.id} to={`/id/${cocktail.id}`} onClick={()=> this.props.history.push(`/id/${cocktail.id}`)}> 
+                    
+                            <CocktailItem cocktail={cocktail}/>
+                            </div>
+                        )
+                        )   
+                        }
                 </ul>
             </div>
         )
