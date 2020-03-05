@@ -61,28 +61,26 @@ h2{
 ul{
   
   top: 10px;
-  position: relative;
+  
   text-align: center;
   right: 10px;
   /* left: 45%; */
   font-size: 25px;
 }
 img{
-  /* display: flex;
-  flex-direction: column; */
-  align-items: center;
+  
+  
+  
   justify-content: space-between;
   width:400px;
-  border: solid 1px black;
   margin: 20px;
   font-size: 20px;
   height: 436px;
-  border-radius: 5px;
 }
-img:hover{
+/* img:hover{
   box-shadow: 2px 2px 3p black;
   transform: translate3d(-1px, -1px, 0);
-}
+} */
 a{
   color: white;
   /* border: 1px solid white; */
@@ -187,3 +185,6 @@ align-items: center;
   font-size: 30px;
   height: 50px;
 }
+
+
+
