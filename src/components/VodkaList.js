@@ -29,11 +29,15 @@ export default class VodkaList extends Component {
             <div>
                 <h2>Vodka Cocktails for fun and pleasure</h2>
                 <ul className='vodka-list'>
-            {
-                this.state.cocktail.map(cocktail => 
-                    <CocktailItem cocktail={cocktail} />
-                    )
-            }
+                {
+                        this.state.cocktail.map(cocktail => (
+                            <div key={cocktail.id} to={`/id/${cocktail.id}`} onClick={()=> this.props.history.push(`/id/${cocktail.id}`)}> 
+                    
+                            <CocktailItem cocktail={cocktail}/>
+                            </div>
+                        )
+                        )   
+                        }
                 </ul>
             </div>
         )

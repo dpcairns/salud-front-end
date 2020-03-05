@@ -4,21 +4,21 @@ import request from 'superagent';
 
 export default class Favorites extends Component {
     state = {
-        cocktails: []
+        favorites: []
 
     }
     componentDidMount = async () => {
         const faves = await request.get('https://mighty-plateau-34350.herokuapp.com/favorites')
         .set ('Authorization', this.props.user.token);
 
-        this.setState({ cocktails: faves.body});
+        this.setState({ favorites: faves.body});
     
     }
     render () {
         return ( 
         <div> 
         Favorites
-        <favoritesList cocktails={ this.state.cocktails }/>
+        <favoritesList favorites={ this.state.favorites }/>
         </div>
         )
     }
