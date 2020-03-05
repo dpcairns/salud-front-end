@@ -37,6 +37,7 @@ export default class App extends Component {
 <img className='home-img' src={myImage} alt=''/>
         <Router>
           <Switch>
+            
             <Route exact path='/id/:myDrink' component={idList}/>
             <Route exact path='/random' component={RandomList}/>
             <Route exact path='/popular' component={PopularList}/>
@@ -46,6 +47,7 @@ export default class App extends Component {
             <Route exact path='/rum' component={RumList}/>
             <Route exact path='/scotch' component={ScotchList}/>
             <Route exact path='/whiskey' component={WhiskeyList}/>
+
             <Route exact path='/' render={(historyprops) =>
             isLoggedIn()
             ? <Home {...historyprops}/>

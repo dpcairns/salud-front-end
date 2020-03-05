@@ -10,7 +10,7 @@ body{
 .home-img{
   width: 500px;
     position: relative;
-    left: 25%;
+    left: 28%;
 }
 .login-box{
   width: 40%;
@@ -61,31 +61,128 @@ h2{
 ul{
   
   top: 10px;
-  position: relative;
+  
   text-align: center;
   right: 10px;
   /* left: 45%; */
   font-size: 25px;
 }
 img{
-  /* display: flex;
-  flex-direction: column; */
-  align-items: center;
+
   justify-content: space-between;
   width:400px;
-  border: solid 1px black;
   margin: 20px;
   font-size: 20px;
   height: 436px;
-  border-radius: 5px;
 }
-img:hover{
+/* img:hover{
   box-shadow: 2px 2px 3p black;
   transform: translate3d(-1px, -1px, 0);
-}
+} */
 a{
   color: white;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   display: flex;
   justify-content: space-between;
 }
+li{
+  color:whitesmoke;
+}
+p{
+  color: white;
+}
+.parent-div{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.drinks-img{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60%;
+
+}
+.vodka-img{
+  width: 200px;
+  height: 250px;
+  
+}
+.vodka-ptag{
+  position: absolute;
+   top: 600px;
+   left: 27%;
+   width: 100%;
+   width: 300px;
+   font-size: 30px;
+   height: 50px;
+}
+.gin-img{
+  width: 200px;
+  height: 250px;
+}
+.gin-ptag{
+  position: absolute;
+  top: 600px;
+  left: 45.5%;
+  width: 100%;
+  width: 300px;
+  font-size: 30px;
+  height: 50px;
+}
+.tequila-img{
+  width: 200px;
+  height: 250px;
+}
+.tequila-ptag{
+   position: absolute;
+   top: 600px;
+   left: 63%;
+   width: 100%;
+   width: 300px;
+   font-size: 30px;
+   height: 50px;
+}
+.scotch-img{
+  width: 200px;
+  height: 250px;
+}
+.scotch-ptag{
+  position: absolute;
+  top: 890px;
+  left: 26%;
+  width: 100%;
+  width: 300px;
+  font-size: 30px;
+  height: 50px;
+}
+.whiskey-img{
+  width: 200px;
+  height: 250px;
+}
+.whiskey-ptag{
+  position: absolute;
+  top: 890px;
+  left: 44%;
+  width: 100%;
+  width: 300px;
+  font-size: 30px;
+  height: 50px;
+}
+.rum-img{
+  width: 200px;
+  height: 250px;
+}
+.rum-ptag{
+  position: absolute;
+  top: 890px;
+  left: 63%;
+  width: 100%;
+  width: 300px;
+  font-size: 30px;
+  height: 50px;
+}
+
+
+

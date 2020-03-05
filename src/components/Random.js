@@ -59,7 +59,7 @@ renderButton = (drink) => {
 render() {
     return (
         <div>
-                <h2>Random Cocktails to amaze your friends</h2>
+                <h2>Random Cocktails</h2>
                 <ul className='random-list'>
             {
                 this.state.cocktail.map(cocktail => (
