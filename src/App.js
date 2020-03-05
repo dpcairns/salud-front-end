@@ -20,6 +20,7 @@ import Home from './Home.js';
 import idList from './components/idList.js'
 import PrivateRoute from './PrivateRoute.js';
 import myImage from './assets/logo.png';
+import SearchList from './components/SearchList.js';
 
 
 const isLoggedIn = () => JSON.parse(localStorage.getItem('user'));
@@ -47,6 +48,7 @@ export default class App extends Component {
             <Route exact path='/rum' component={RumList}/>
             <Route exact path='/scotch' component={ScotchList}/>
             <Route exact path='/whiskey' component={WhiskeyList}/>
+            <Route exact path='/name/:myCocktail' component={SearchList}/>
 
             <Route exact path='/' render={(historyprops) =>
             isLoggedIn()
