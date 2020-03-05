@@ -27,7 +27,7 @@ export default withRouter(class favoritesList extends Component {
             <div>
                 {
                     this.state.favorites.map(drink => <div key={drink.name} className="drink-box">
-                        <div>{drink.name}</div>
+                        <h2>{drink.name}</h2>
                         <img src={drink.image} alt=""/>
                         {
                             this.props.location.pathname !== '/favorites'
