@@ -5,7 +5,6 @@ import CocktailItem from './CocktailItem';
 
 
 
-
 export default class WhiskeyList extends Component {
     state = {
         id: [],
@@ -36,7 +35,8 @@ makeFavorite = async (drink) => {
     const user = JSON.parse(localStorage.getItem('user'))
     const fave = await request.post('https://mighty-plateau-34350.herokuapp.com/favorites', {
         name: drink.name,
-        image: drink.image
+        image: drink.image,
+        api_id: drink.id 
        
     })
     .set('Authorization', user.token)
