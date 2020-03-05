@@ -1,10 +1,9 @@
-
-*{
+/* *{
   margin: 0;
   padding: 0;
   box-sizing: border;
-}
-body{
+} */
+/* body{
   background-color: black;
 }
 .home-img{
@@ -99,8 +98,7 @@ align-items: center;
 }
 .drinks-img{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+
   width: 60%;
 
 }
@@ -112,7 +110,7 @@ align-items: center;
 .vodka-ptag{
   position: absolute;
    top: 600px;
-   left: 27%;
+   left: 7%;
    width: 100%;
    width: 300px;
    font-size: 30px;
@@ -125,7 +123,7 @@ align-items: center;
 .gin-ptag{
   position: absolute;
   top: 600px;
-  left: 45.5%;
+  left: 28.5%;
   width: 100%;
   width: 300px;
   font-size: 30px;
@@ -136,26 +134,27 @@ align-items: center;
   height: 250px;
 }
 .tequila-ptag{
-   position: absolute;
-   top: 600px;
-   left: 63%;
-   width: 100%;
-   width: 300px;
-   font-size: 30px;
-   height: 50px;
+  position: absolute;
+    top: 585px;
+    left: 47%;
+    width: 100%;
+    width: 300px;
+    font-size: 30px;
+    height: 50px;
 }
+
 .scotch-img{
   width: 200px;
   height: 250px;
 }
 .scotch-ptag{
   position: absolute;
-  top: 890px;
-  left: 26%;
-  width: 100%;
-  width: 300px;
-  font-size: 30px;
-  height: 50px;
+    top: 585px;
+    left: 67%;
+    width: 100%;
+    width: 300px;
+    font-size: 30px;
+    height: 50px;
 }
 .whiskey-img{
   width: 200px;
@@ -163,26 +162,27 @@ align-items: center;
 }
 .whiskey-ptag{
   position: absolute;
-  top: 890px;
-  left: 44%;
-  width: 100%;
-  width: 300px;
-  font-size: 30px;
-  height: 50px;
+    top: 585px;
+    left: 86%;
+    width: 100%;
+    width: 300px;
+    font-size: 30px;
+    height: 50px;
 }
+
 .rum-img{
   width: 200px;
   height: 250px;
 }
 .rum-ptag{
   position: absolute;
-  top: 890px;
-  left: 63%;
-  width: 100%;
-  width: 300px;
-  font-size: 30px;
-  height: 50px;
+    top: 585px;
+    left: 108%;
+    width: 100%;
+    width: 300px;
+    font-size: 30px;
+    height: 50px;
 }
 
 
-
+ */

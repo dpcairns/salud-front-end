@@ -16,10 +16,16 @@ import {
  import SaludLogin from './saludLogin.js';
  import favoritesList from './components/favoriteslist.js';
 import Home from './Home.js';
-//import PrivateRoute from './PrivateRoute.js';
+import Header from './components/Header.js';
 import idList from './components/idList.js'
 import PrivateRoute from './PrivateRoute.js';
 import myImage from './assets/logo.png';
+// import vodkaImage from './assets/wheat.png';
+// import ginImage from './assets/gin.png';
+// import teqImage from './assets/agave.png';
+// import whiskeyImage from './assets/whiskey2.png';
+// import scotchImage from './assets/scotch5.png';
+// import rumImage from './assets/sugarcane.png';
 
 
 const isLoggedIn = () => JSON.parse(localStorage.getItem('user'));
@@ -36,6 +42,7 @@ export default class App extends Component {
       <div>
 <img className='home-img' src={myImage} alt=''/>
         <Router>
+        <Header/>
           <Switch>
             
             <Route exact path='/id/:myDrink' component={idList}/>
