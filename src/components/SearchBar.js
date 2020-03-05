@@ -8,7 +8,7 @@ export default class SearchBar extends Component {
           value={this.props.searchQuery}
           onChange={this.props.handleChange}
         />
-        <button>Search</button>
+        <button>Find a drink</button>
       </form>
     );
   }

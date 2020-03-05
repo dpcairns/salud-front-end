@@ -66,7 +66,7 @@ export default class DrinkId extends Component {
                         {cocktail.Measurement[6]}
                       </li> 
                     </ul>
-                    <p className='instructions-ptag'>Instructions:</p>
+                    <p className='instructions-ptag'>How to make your tasty drink:</p>
                     <p className='instructions'>
                       {cocktail.Instructions}
                      </p>

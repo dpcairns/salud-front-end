@@ -47,7 +47,7 @@ renderButton = (drink) => {
     const isOnFavoritesList = this.state.favorites.find(cocktails => drink.name === cocktails.name);
     if (!isOnFavoritesList) {
     
-    return <button onClick={ () => this.makeFavorite(drink)}>Make favorite</button>
+    return <button onClick={ () => this.makeFavorite(drink)}>Add to Favorites🍹</button>
     }
     // otherwise, indicate that they ae already on the favorites list
     // this.makeFavorite(drink.id)
