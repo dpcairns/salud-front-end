@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border;
+  }
+.drinks-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.gin-img{
+    width: 280px;
+}

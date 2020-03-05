@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+
+import { Link } from 'react-router-dom';
+
 import {
     BrowserRouter as Router,
     Link,
@@ -57,6 +60,9 @@ handleSearch = async e => {
    
     render() {
         return(
+
+           <div> 
+             
            <div className='parent-div'> 
               <div className='drinks-img'>
 
@@ -65,15 +71,16 @@ handleSearch = async e => {
             handleSearch={this.handleSearch}
             handleChange={this.handleChange}
           /> 
+
                 
-                <Link to='/vodka'> <p className='vodka-ptag'>Vodka</p> <img className='vodka-img' src={vodkaImage} alt=''/></Link>
+                <Link to='/vodka'></Link>
         
-                <Link to='/gin'> <p className='gin-ptag'> Gin</p> <img className='gin-img' src={ginImage} alt=''/></Link>
-                <Link to='/tequila'> <p className='tequila-ptag'>Tequila </p> <img className='tequila-img' src={teqImage} alt=''/></Link>
-                <Link to='/scotch'> <p className='scotch-ptag'> Scotch</p> <img className='scotch-img' src={scotchImage} alt=''/></Link>
-                <Link to='/whiskey'> <p className='whiskey-ptag'> Whiskey</p> <img className='whiskey-img' src={whiskeyImage} alt=''/></Link>
-                <Link to='/rum'> <p className='rum-ptag'> Rum</p> <img className='rum-img' src={rumImage} alt=''/></Link>
-                </div>
+                <Link to='/gin'> </Link>
+                <Link to='/tequila'> </Link>
+                <Link to='/scotch'> </Link>
+                <Link to='/whiskey'>  </Link>
+                <Link to='/rum'></Link> 
+             
                 <RandomList {...this.props}/>
                 
 
