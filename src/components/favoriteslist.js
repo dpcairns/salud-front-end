@@ -26,8 +26,13 @@ export default withRouter(class favoritesList extends Component {
         return(
             <div>
                 {
-                    this.state.favorites.map(drink => <div key={drink.name} className="drink-box">
-                        <div>{drink.name}</div>
+                    this.state.favorites.map
+                    (drink =>  (    
+                    
+                    <div key={drink.id} to={`/id/${drink.api_id}`} onClick={()=> this.props.history.push(`/id/${drink.api_id}`)}> 
+
+                        
+                        <h2>{drink.name}</h2>
                         <img src={drink.image} alt=""/>
                         {
                             this.props.location.pathname !== '/favorites'
@@ -35,7 +40,12 @@ export default withRouter(class favoritesList extends Component {
 
 }
                         
-                        </div>)
+                        </div>
+                        
+                        )
+                        )
+
+                
                 }
             </div>
         )

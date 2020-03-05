@@ -28,7 +28,7 @@ export default class IdList extends Component {
         console.log('|| cocktail', this.state.cocktail)
         return (
             <div>
-                <h2>Cocktail of your choice for fun and pleasure</h2>
+                <h2>Cocktails of your choice for fun and pleasure</h2>
                 <ul className='drink-list'>
             {
                 this.state.cocktail.length && this.state.cocktail.map(cocktail => 

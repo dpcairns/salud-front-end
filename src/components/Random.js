@@ -39,8 +39,8 @@ makeFavorite = async (drink) => {
     const user = JSON.parse(localStorage.getItem('user'))
     const fave = await request.post('https://mighty-plateau-34350.herokuapp.com/favorites', {
         name: drink.name,
-        image: drink.image
-       
+        image: drink.image,
+        api_id: drink.id 
     })
     .set('Authorization', user.token)
     console.log('fave', fave.body)
@@ -50,7 +50,7 @@ renderButton = (drink) => {
     const isOnFavoritesList = this.state.favorites.find(cocktails => drink.name === cocktails.name);
     if (!isOnFavoritesList) {
     
-    return <button onClick={ () => this.makeFavorite(drink)}>Make favorite</button>
+    return <button onClick={ () => this.makeFavorite(drink)}>Add to Favorites🍹</button>
     }
     // otherwise, indicate that they ae already on the favorites list
     // this.makeFavorite(drink.id)

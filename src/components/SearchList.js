@@ -6,7 +6,7 @@ import CocktailItem from './CocktailItem';
 
 
 
-export default class TequilaList extends Component {
+export default class SearchList extends Component {
     state = {
         id: [],
         cocktail:[],
@@ -15,19 +15,19 @@ export default class TequilaList extends Component {
     async componentDidMount() {
 
         const user = JSON.parse(localStorage.getItem('user'))
-        const getTequilaList = () => request.get(`https://mighty-plateau-34350.herokuapp.com/tequila`)
+        const getSearchList = () => request.get(`https://mighty-plateau-34350.herokuapp.com/name/${this.props.match.params.myCocktail}`)
             .set('Authorization', user.token);
-
+        
         const getFavorites = () => request.get('https://mighty-plateau-34350.herokuapp.com/favorites')
             .set('Authorization', user.token); 
 
-        
-    const fave = await getFavorites()        
-    const data = await getTequilaList()
+        const fave = await getFavorites()    
+        const data = await getSearchList()
     console.log(data.body)
     this.setState({
         cocktail: data.body,
         favorites: fave.body
+
     })
 }
 
@@ -59,8 +59,8 @@ renderButton = (drink) => {
     render() {
         return (
             <div>
-                <h2>Tequila Cocktails for fun and pleasure</h2>
-                <ul className='tequila-list'>
+                <h2> Cocktails for fun and pleasure</h2>
+                <ul className='drink-list'>
                 {
                         this.state.cocktail.map(cocktail => (
                             <>
