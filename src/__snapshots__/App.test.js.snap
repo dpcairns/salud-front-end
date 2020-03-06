@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Popular list correctly 1`] = `
+<div>
+  <h2>
+    Vodka Cocktails for fun and pleasure
+  </h2>
+  <ul
+    className="vodka-list"
+  />
+</div>
+`;
+
+exports[`renders VodkaList correctly 1`] = `
+<div>
+  <h2>
+    Vodka Cocktails for fun and pleasure
+  </h2>
+  <ul
+    className="vodka-list"
+  />
+</div>
+`;
+
+exports[`renders VodkaList correctly 2`] = `
+<div>
+  <h2>
+    Vodka Cocktails for fun and pleasure
+  </h2>
+  <ul
+    className="vodka-list"
+  />
+</div>
+`;
+
+exports[`renders VodkaList correctly 3`] = `
+<div>
+  <h2>
+    Vodka Cocktails for fun and pleasure
+  </h2>
+  <ul
+    className="vodka-list"
+  />
+</div>
+`;
+
+exports[`renders popular list correctly 1`] = `
+<div>
+  <h2>
+    Popular cocktails to be the life of the party
+  </h2>
+  <ul
+    className="popular-list"
+  />
+</div>
+`;
+
+exports[`renders popular list correctly 2`] = `
+<div>
+  <h2>
+    Popular cocktails to be the life of the party
+  </h2>
+  <ul
+    className="popular-list"
+  />
+</div>
+`;
+
+exports[`renders tequila list correctly 1`] = `
+<div>
+  <h2>
+    Tequila Cocktails for fun and pleasure
+  </h2>
+  <ul
+    className="tequila-list"
+  />
+</div>
+`;
+
+exports[`renders w list correctly 1`] = `
+<div>
+  <h2>
+    Popular cocktails to be the life of the party
+  </h2>
+  <ul
+    className="popular-list"
+  />
+</div>
+`;
+
+exports[`renders whis list correctly 1`] = `
+<div>
+  <h2>
+    Popular cocktails to be the life of the party
+  </h2>
+  <ul
+    className="popular-list"
+  />
+</div>
+`;
+
+exports[`renders whiskey list correctly 1`] = `
+<div>
+  <h2>
+    Popular cocktails to be the life of the party
+  </h2>
+  <ul
+    className="popular-list"
+  />
+</div>
+`;
