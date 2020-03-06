@@ -1,15 +1,13 @@
-/* *{
-  margin: 0;
-  padding: 0;
+*{
   box-sizing: border;
-} */
-/* body{
+}
+body{
   background-color: black;
 }
 .home-img{
-  width: 500px;
+  width: 450px;
     position: relative;
-    left: 28%;
+    left: 1%;
 }
 .login-box{
   width: 40%;
@@ -90,109 +88,23 @@ li{
 p{
   color: white;
 }
-.parent-div{
-display: flex;
-flex-direction: column;
-align-items: center;
-
-}
-.drinks-img{
-  display: flex;
-
-  width: 60%;
-
-}
-.vodka-img{
-  width: 200px;
-  height: 250px;
-  
-}
-.vodka-ptag{
-  position: absolute;
-   top: 600px;
-   left: 7%;
-   width: 100%;
-   width: 300px;
-   font-size: 30px;
-   height: 50px;
-}
-.gin-img{
-  width: 200px;
-  height: 250px;
-}
-.gin-ptag{
-  position: absolute;
-  top: 600px;
-  left: 28.5%;
-  width: 100%;
-  width: 300px;
-  font-size: 30px;
-  height: 50px;
-}
-.tequila-img{
-  width: 200px;
-  height: 250px;
-}
-.tequila-ptag{
-  position: absolute;
-    top: 585px;
-    left: 47%;
-    width: 100%;
-    width: 300px;
-    font-size: 30px;
-    height: 50px;
-}
-
-.scotch-img{
-  width: 200px;
-  height: 250px;
-}
-.scotch-ptag{
-  position: absolute;
-    top: 585px;
-    left: 67%;
-    width: 100%;
-    width: 300px;
-    font-size: 30px;
-    height: 50px;
-}
-.whiskey-img{
-  width: 200px;
-  height: 250px;
-}
-.whiskey-ptag{
-  position: absolute;
-    top: 585px;
-    left: 86%;
-    width: 100%;
-    width: 300px;
-    font-size: 30px;
-    height: 50px;
-}
-
-.rum-img{
-  width: 200px;
-  height: 250px;
-}
-.rum-ptag{
-  position: absolute;
-    top: 585px;
-    left: 108%;
-    width: 100%;
-    width: 300px;
-    font-size: 30px;
-    height: 50px;
-}
-button{
+.fav-btn{
 color: black !important;
-text-transform: uppercase;
+/* text-transform: uppercase; */
 text-decoration: none;
 background: rgb(241, 218, 5);
-padding: 10px;
-border-radius: 40px;
+border-radius: 10%;
 display: inline-block;
-border: none;
 transition: all 0.4s ease 0s;
+cursor: pointer;
+width: 80px;
+height: 40px;
+position: relative;
+ right: 2.5%; 
+ top: 50%;
+ top: 30px;
+
+
 }
 button:hover{
   text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
@@ -201,4 +113,36 @@ button:hover{
 transition: all 0.4s ease 0s;
 }
 
- */
+.random-list{
+  display: flex;
+  flex-flow: wrap;
+}
+.random-title{
+  margin-bottom: 20px;
+}
+.searchbar{
+  position: relative;
+  left: 38%;
+}
+input{
+  width: 200px;
+  height: 30px;
+}
+.search-btn{
+  position: relative;
+  left: 1%;
+  color: black !important;
+/* text-transform: uppercase; */
+text-decoration: none;
+background: rgb(241, 218, 5);
+border-radius: 10%;
+display: inline-block;
+transition: all 0.4s ease 0s;
+cursor: pointer;
+width: 80px;
+height: 40px;
+position: relative;
+}
+
+
+
