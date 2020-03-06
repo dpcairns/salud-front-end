@@ -13,21 +13,13 @@ export default class DrinkId extends Component {
                   <img className='detail-image' src ={cocktail.Image} alt=""/>
 
                
-                        <p className= 'drink-id'>
-                             {cocktail.id}
-                        </p>
+
         
                          <p className='ing-ptag'>Ingredients: </p>
           
                  <ul className='ing'>
                       <li className='ing-li'> 
-                        {cocktail.Ingredients[0]}
-                        {cocktail.Measurement[0]}
-                      </li>  
-                      <li>
-                        {cocktail.Ingredients[1]}
-                        </li>
-                      <li>
+
                         {cocktail.Ingredients[0]} 
                         {cocktail.Measurement[0]}
                       </li>  
@@ -49,16 +41,6 @@ export default class DrinkId extends Component {
                       </li> 
                       <li>
                         {cocktail.Ingredients[5]}
-                        {cocktail.Measurement[5]}
-                      </li> 
-                      <li>
-                        {cocktail.Ingredients[6]}
-
-                        {cocktail.Ingredients[4]} 
-                        {cocktail.Measurement[4]}
-                      </li> 
-                      <li>
-                        {cocktail.Ingredients[5]} 
                         {cocktail.Measurement[5]}
                       </li> 
                       <li>

@@ -3,12 +3,12 @@ import React, { Component } from "react";
 export default class SearchBar extends Component {
   render() {
     return (
-      <form onSubmit={this.props.handleSearch}>
+      <form className='searchbar' onSubmit={this.props.handleSearch}>
         <input
           value={this.props.searchQuery}
           onChange={this.props.handleChange}
         />
-        <button>Find a drink</button>
+        <button className='search-btn'>Find a drink</button>
       </form>
     );
   }

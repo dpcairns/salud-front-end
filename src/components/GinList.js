@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import request from 'superagent';
 //import { Link } from 'react-router-dom';
 import CocktailItem from './CocktailItem';
-import ginImage from '../assets/gin.png';
+//import ginImage from '../assets/gin.png';
 
 
 export default class GinList extends Component {
@@ -56,7 +56,7 @@ renderButton = (drink) => {
     render() {
         return (
             <div>
-                <h2>Gin Cocktails for fun and pleasure</h2>
+                <h2>Gin Cocktails  </h2>
                 <ul className='gin-list'>
 
                     {
