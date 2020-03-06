@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import favoritesList from './favoriteslist.js';
 import request from 'superagent';
-
+import Header from './components/Header.js';
 export default class Favorites extends Component {
     state = {
         favorites: []
@@ -17,8 +17,9 @@ export default class Favorites extends Component {
     render () {
         return ( 
         <div> 
+        
         Favorites
-        <favoritesList favorites={ this.state.favorites }/>
+        <favoritesList  favorites={ this.state.favorites }/>
         </div>
         )
     }

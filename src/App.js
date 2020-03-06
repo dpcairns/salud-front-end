@@ -16,7 +16,7 @@ import {
  import SaludLogin from './saludLogin.js';
  import favoritesList from './components/favoriteslist.js';
 import Home from './Home.js';
-import Header from './components/Header.js';
+// import Header from './components/Header.js';
 import idList from './components/idList.js'
 import PrivateRoute from './PrivateRoute.js';
 import myImage from './assets/logo.png';
@@ -39,7 +39,7 @@ export default class App extends Component {
       <div>
 <img className='home-img' src={myImage} alt=''/>
         <Router>
-        <Header/>
+        {/* <Header/> */}
           <Switch>
             
             <Route exact path='/id/:myDrink' component={idList}/>

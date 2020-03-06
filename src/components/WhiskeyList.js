@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import request from 'superagent';
 //import { Link } from 'react-router-dom';
 import CocktailItem from './CocktailItem';
+import header from './Header.js';
+import Header from './Header.js';
 
 
 
@@ -48,7 +50,7 @@ renderButton = (drink) => {
     const isOnFavoritesList = this.state.favorites.find(cocktails => drink.name === cocktails.name);
     if (!isOnFavoritesList) {
     
-    return <button onClick={ () => this.makeFavorite(drink)}> Add to Favorites🍹</button>
+    return <button className='fav-btn' onClick={ () => this.makeFavorite(drink)}> Add to Favorites🍹</button>
     }
     // otherwise, indicate that they ae already on the favorites list
     // this.makeFavorite(drink.id)
@@ -58,7 +60,8 @@ renderButton = (drink) => {
     render() {
         return (
             <div>
-                <h2>Whiskey Cocktails</h2>
+                <Header/>
+                <h2 className='whiskey-h2'>Whiskey Cocktails</h2>
                 <ul className='whiskey-list'>
                 {
                         this.state.cocktail.map(cocktail => (

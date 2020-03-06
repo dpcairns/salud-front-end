@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import request from 'superagent';
 import { withRouter } from 'react-router-dom';
-
+import Header from './Header.js';
 
 
 export default withRouter(class favoritesList extends Component {
@@ -25,11 +25,12 @@ export default withRouter(class favoritesList extends Component {
     render() {
         return(
             <div>
+                <Header/>
                 {
                     this.state.favorites.map
                     (drink =>  (    
                     
-                    <div key={drink.id} to={`/id/${drink.api_id}`} onClick={()=> this.props.history.push(`/id/${drink.api_id}`)}> 
+                    <div className='fav-list' key={drink.id} to={`/id/${drink.api_id}`} onClick={()=> this.props.history.push(`/id/${drink.api_id}`)}> 
 
                         
                         <h2>{drink.name}</h2>

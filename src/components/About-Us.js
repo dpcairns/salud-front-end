@@ -6,12 +6,12 @@ import suriImg from '../assets/suri.png';
 import dorjeImg from '../assets/dorje.JPG';
 import anastasiaImg from '../assets/anastasia.png';
 import '../AboutUs.css';
-
+import Header from './Header.js'
 export default class AboutUs extends Component {
     render () {
         return (
 <section>
-
+<Header/>
             <div className='container'>
                 <h1 className='heading'> Our Team</h1>
             <div className='card-wrapper'>
