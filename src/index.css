@@ -7,7 +7,7 @@ body{
 .home-img{
   width: 450px;
     position: relative;
-    left: 1%;
+    left: 34%;
 }
 .login-box{
   width: 40%;
@@ -47,9 +47,6 @@ body{
   cursor: pointer;
   margin: 12px 0;
 }
-
-/* random */
-
 h2{
   text-align: center;
   
@@ -61,7 +58,6 @@ ul{
   
   text-align: center;
   right: 10px;
-  /* left: 45%; */
   font-size: 25px;
 }
 img{
@@ -72,13 +68,8 @@ img{
   font-size: 20px;
   height: 436px;
 }
-/* img:hover{
-  box-shadow: 2px 2px 3p black;
-  transform: translate3d(-1px, -1px, 0);
-} */
 a{
   color: white;
-  /* border: 1px solid white; */
   display: flex;
   justify-content: space-between;
 }
@@ -89,27 +80,25 @@ p{
   color: white;
 }
 .fav-btn{
-color: black !important;
-/* text-transform: uppercase; */
-text-decoration: none;
-background: rgb(241, 218, 5);
-border-radius: 10%;
-display: inline-block;
-transition: all 0.4s ease 0s;
-cursor: pointer;
-width: 80px;
-height: 40px;
-position: relative;
- right: 2.5%; 
- top: 50%;
- top: 30px;
-
-
+  color: black;
+  text-decoration: none;
+  background: rgb(241, 218, 5);
+  border-radius: 10%;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+  width: 80px;
+  height: 40px;
+  position: relative;
+  right: 1.3%;
+  top: 0px;
+  
 }
+
+
+
 button:hover{
   text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
--webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
--moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
 transition: all 0.4s ease 0s;
 }
 
@@ -123,26 +112,115 @@ transition: all 0.4s ease 0s;
 .searchbar{
   position: relative;
   left: 38%;
+  margin-bottom: 80px;
 }
 input{
-  width: 200px;
-  height: 30px;
+  width: 300px;
+  height: 50px;
+  font-size: 30px;
 }
 .search-btn{
   position: relative;
   left: 1%;
   color: black !important;
-/* text-transform: uppercase; */
 text-decoration: none;
 background: rgb(241, 218, 5);
 border-radius: 10%;
 display: inline-block;
 transition: all 0.4s ease 0s;
 cursor: pointer;
-width: 80px;
-height: 40px;
+width: 150px;
+height: 45px;
 position: relative;
+font-size: 20px;
 }
+.vodka-list{
+  display: flex;
+flex-flow: wrap;
+justify-content: space-evenly;
+}
+.vodka-h2{
+  font-size: 40px;
+  margin-bottom: 90px;
+  border-bottom: 1px solid yellow;
+}
+.popular-list{
+  display: flex;
+flex-flow: wrap;
+justify-content: space-evenly;
+}
+.popular-h2{
+  font-size: 40px;
+  margin-bottom: 90px;
+  border-bottom: 1px solid yellow;
+}
+.gin-list{
+  display: flex;
+flex-flow: wrap;
+justify-content: space-evenly;
+}
+.gin-h2{
+  font-size: 40px;
+  margin-bottom: 90px;
+  border-bottom: 1px solid yellow;
+}
+.tequila-list{
+  display: flex;
+flex-flow: wrap;
+justify-content: space-evenly;
+}
+.tequila-h2{
+  font-size: 40px;
+  margin-bottom: 90px;
+  border-bottom: 1px solid yellow;
+}
+.search-list{
+  display: flex;
+flex-flow: wrap;
+justify-content: space-evenly;
+}
+.search-h2{
+  font-size: 40px;
+  margin-bottom: 90px;
+  border-bottom: 1px solid yellow;
+}
+.rum-list{
+  display: flex;
+flex-flow: wrap;
+justify-content: space-evenly;
 
+}
+.rum-h2{
+  font-size: 40px;
+  margin-bottom: 90px;
+  border-bottom: 1px solid yellow;
+}
+.scotch-list{
+  display: flex;
+flex-flow: wrap;
+justify-content: space-evenly;
+}
+.scotch-h2{
+  font-size: 40px;
+  margin-bottom: 90px;
+  border-bottom: 1px solid yellow;
+}
+.whiskey-list{
+  display: flex;
+flex-flow: wrap;
+justify-content: space-evenly;
+}
+.whiskey-h2{
+  font-size: 40px;
+  margin-bottom: 90px;
+  border-bottom: 1px solid yellow;
+}
+.fav-list{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 
-
+}
+h2{
+  font-size:40px
+}

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'; 
-import './Header.css';
+import '../Header.css';
+
 
 
 export default class Header extends Component {
@@ -18,6 +19,7 @@ export default class Header extends Component {
 <Link className='rum' to='/rum'>Rum</Link> 
 <Link className='popular' to='/popular'>Popular Drinks</Link>
 <Link className='favorites' to='/favorites'> Favorites</Link>
+<Link className='about-us' to='/about-us'>About Us</Link>
 <Link className='home' to='/'> Home</Link>
             </div>
         )

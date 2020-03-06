@@ -1,21 +1,8 @@
 import React, { Component } from 'react';
-
-
-import {
-    BrowserRouter as Router,
-    Link,
-} from 'react-router-dom';
-
 import RandomList from './components/Random.js'
-// import vodkaImage from './assets/vodka.png';
-// import ginImage from './assets/gin.png';
-// import teqImage from './assets/tequila.png';
-// import whiskeyImage from './assets/whiskey.png';
-// import scotchImage from './assets/scotch.png';
-// import rumImage from './assets/rum.png';
  import request from 'superagent';
  import SearchBar from './components/SearchBar.js';
-
+import Header from './components/Header.js';
 
 
 export default class Home extends Component {
@@ -59,24 +46,14 @@ handleSearch = async e => {
    
     render() {
         return(
-
-           
-             
            <div> 
-
-
-
-
-
+             <Header/>
               <SearchBar
             searchQuery={this.state.searchQuery}
             handleSearch={this.handleSearch}
             handleChange={this.handleChange}
-          /> 
-
-                
-             
-            <div className='random'>
+          />
+             <div className='random'>
                 <RandomList {...this.props}/>
             </div>
             </div>
