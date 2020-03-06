@@ -21,6 +21,7 @@ export default class DrinkId extends Component {
                          <p className='ing-ptag'>Ingredients: </p>
                  <ul className='ing'>
                      {elementArray}
+
                     </ul>
                     <p className='instructions-ptag'>How to make your tasty drink:</p>
                     <p className='instructions'>
