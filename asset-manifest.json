@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/salud-front-end/static/css/main.2ad409b9.chunk.css",
+    "main.js": "/salud-front-end/static/js/main.0f6c0d18.chunk.js",
+    "main.js.map": "/salud-front-end/static/js/main.0f6c0d18.chunk.js.map",
+    "runtime-main.js": "/salud-front-end/static/js/runtime-main.22fd4c92.js",
+    "runtime-main.js.map": "/salud-front-end/static/js/runtime-main.22fd4c92.js.map",
+    "static/js/2.0a1a42df.chunk.js": "/salud-front-end/static/js/2.0a1a42df.chunk.js",
+    "static/js/2.0a1a42df.chunk.js.map": "/salud-front-end/static/js/2.0a1a42df.chunk.js.map",
+    "index.html": "/salud-front-end/index.html",
+    "precache-manifest.9432b58c15d3ed10a35baac461106a0a.js": "/salud-front-end/precache-manifest.9432b58c15d3ed10a35baac461106a0a.js",
+    "service-worker.js": "/salud-front-end/service-worker.js",
+    "static/css/main.2ad409b9.chunk.css.map": "/salud-front-end/static/css/main.2ad409b9.chunk.css.map",
+    "static/js/2.0a1a42df.chunk.js.LICENSE.txt": "/salud-front-end/static/js/2.0a1a42df.chunk.js.LICENSE.txt",
+    "static/media/logo.png": "/salud-front-end/static/media/logo.9f302433.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.22fd4c92.js",
+    "static/js/2.0a1a42df.chunk.js",
+    "static/css/main.2ad409b9.chunk.css",
+    "static/js/main.0f6c0d18.chunk.js"
+  ]
+}
