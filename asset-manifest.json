@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.050cb3f3.chunk.css",
-    "main.js": "/static/js/main.58e9a6bb.chunk.js",
-    "main.js.map": "/static/js/main.58e9a6bb.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.ff9a6632.js",
-    "runtime-main.js.map": "/static/js/runtime-main.ff9a6632.js.map",
-    "static/js/2.a8b803eb.chunk.js": "/static/js/2.a8b803eb.chunk.js",
-    "static/js/2.a8b803eb.chunk.js.map": "/static/js/2.a8b803eb.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.a87272871097cd050cbac5aba1ff1dcb.js": "/precache-manifest.a87272871097cd050cbac5aba1ff1dcb.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.050cb3f3.chunk.css.map": "/static/css/main.050cb3f3.chunk.css.map",
-    "static/js/2.a8b803eb.chunk.js.LICENSE.txt": "/static/js/2.a8b803eb.chunk.js.LICENSE.txt",
-    "static/media/anastasia.png": "/static/media/anastasia.6a397955.png",
-    "static/media/background.png": "/static/media/background.83c1cba7.png",
-    "static/media/dorje.JPG": "/static/media/dorje.d25168a1.JPG",
-    "static/media/logo.png": "/static/media/logo.9f302433.png",
-    "static/media/rex.jpeg": "/static/media/rex.bf899686.jpeg",
-    "static/media/suri.png": "/static/media/suri.8af06777.png"
+    "main.css": "/salud-front-end/static/css/main.050cb3f3.chunk.css",
+    "main.js": "/salud-front-end/static/js/main.21456aa8.chunk.js",
+    "main.js.map": "/salud-front-end/static/js/main.21456aa8.chunk.js.map",
+    "runtime-main.js": "/salud-front-end/static/js/runtime-main.22fd4c92.js",
+    "runtime-main.js.map": "/salud-front-end/static/js/runtime-main.22fd4c92.js.map",
+    "static/js/2.10f145c0.chunk.js": "/salud-front-end/static/js/2.10f145c0.chunk.js",
+    "static/js/2.10f145c0.chunk.js.map": "/salud-front-end/static/js/2.10f145c0.chunk.js.map",
+    "index.html": "/salud-front-end/index.html",
+    "precache-manifest.d0eab93448d311768f270b8c2f2da6dc.js": "/salud-front-end/precache-manifest.d0eab93448d311768f270b8c2f2da6dc.js",
+    "service-worker.js": "/salud-front-end/service-worker.js",
+    "static/css/main.050cb3f3.chunk.css.map": "/salud-front-end/static/css/main.050cb3f3.chunk.css.map",
+    "static/js/2.10f145c0.chunk.js.LICENSE.txt": "/salud-front-end/static/js/2.10f145c0.chunk.js.LICENSE.txt",
+    "static/media/anastasia.png": "/salud-front-end/static/media/anastasia.6a397955.png",
+    "static/media/background.png": "/salud-front-end/static/media/background.83c1cba7.png",
+    "static/media/dorje.JPG": "/salud-front-end/static/media/dorje.d25168a1.JPG",
+    "static/media/logo.png": "/salud-front-end/static/media/logo.9f302433.png",
+    "static/media/rex.jpeg": "/salud-front-end/static/media/rex.bf899686.jpeg",
+    "static/media/suri.png": "/salud-front-end/static/media/suri.8af06777.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.ff9a6632.js",
-    "static/js/2.a8b803eb.chunk.js",
+    "static/js/runtime-main.22fd4c92.js",
+    "static/js/2.10f145c0.chunk.js",
     "static/css/main.050cb3f3.chunk.css",
-    "static/js/main.58e9a6bb.chunk.js"
+    "static/js/main.21456aa8.chunk.js"
   ]
 }
