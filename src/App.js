@@ -45,14 +45,11 @@ export default class App extends Component {
             <Route exact path='/id/:myDrink' component={idList}/>
             <Route exact path='/random' component={RandomList}/>
             <Route exact path='/popular' component={PopularList}/>
-            <Route exact path='/vodka' component={VodkaList}/>
-            <Route exact path='/gin' component={GinList}/>
-            <Route exact path='/tequila' component={TequilaList}/>
-            <Route exact path='/rum' component={RumList}/>
-            <Route exact path='/scotch' component={ScotchList}/>
-            <Route exact path='/whiskey' component={WhiskeyList}/>
+            // seems to me all of these drinklist routes should have been one DrinkList component that uses params to desice which data to load
+            <Route exact path='/all/:drink' component={DrinkList}/>
             <Route exact path='/name/:myCocktail' component={SearchList}/>
             <Route exact path='/about-us' component={AboutUs}/>
+            // try to use the PrivateRoute for this
             <Route exact path='/' render={(historyprops) =>
             isLoggedIn()
             ? <Home {...historyprops}/>

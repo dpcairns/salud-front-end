@@ -6,6 +6,8 @@ import Header from './Header.js'
 
 
 
+// these list components should be refactored into a single DrinkList component that looks at this.props.match.params.drink to figure out what to fetch
+
 export default class RumList extends Component {
     state = {
         id: [],
@@ -14,6 +16,10 @@ export default class RumList extends Component {
     async componentDidMount() {
 
         const user = JSON.parse(localStorage.getItem('user'))
+        // getRumList and getFavorites should be defined in another file, to be resued throughout the app, and should be refactored to use a drink as a parameter, 
+        //const geDrinkList = (drink) => request.get(`https://mighty-plateau-34350.herokuapp.com/${drink}`)
+        // .set('Authorization', user.token);
+        
         const getRumList = () => request.get(`https://mighty-plateau-34350.herokuapp.com/rum`)
             .set('Authorization', user.token);
         

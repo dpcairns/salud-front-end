@@ -2,32 +2,37 @@ import React, { Component } from 'react';
 import request from 'superagent';
 //import { Link } from 'react-router-dom';
 import CocktailItem from './CocktailItem';
-import Header from './Header.js';
+import Header from './Header.js'
 
 
 
-export default class TequilaList extends Component {
+// these list components should be refactored into a single DrinkList component that looks at this.props.match.params.drink to figure out what to fetch
+
+export default class RumList extends Component {
     state = {
         id: [],
-        cocktail:[],
-        favorites:[]
+        cocktail:[]
     }
     async componentDidMount() {
 
         const user = JSON.parse(localStorage.getItem('user'))
-        const getTequilaList = () => request.get(`https://mighty-plateau-34350.herokuapp.com/tequila`)
+        // getRumList and getFavorites should be defined in another file, to be resued throughout the app, and should be refactored to use a drink as a parameter, 
+        //const geDrinkList = (drink) => request.get(`https://mighty-plateau-34350.herokuapp.com/${drink}`)
+        // .set('Authorization', user.token);
+        
+        const getList = () => request.get(`https://mighty-plateau-34350.herokuapp.com/${this.props.match.params.drink}`)
             .set('Authorization', user.token);
-
+        
         const getFavorites = () => request.get('https://mighty-plateau-34350.herokuapp.com/favorites')
             .set('Authorization', user.token); 
 
-        
-    const fave = await getFavorites()        
-    const data = await getTequilaList()
+        const fave = await getFavorites()    
+        const data = await getList()
     console.log(data.body)
     this.setState({
         cocktail: data.body,
         favorites: fave.body
+
     })
 }
 
@@ -60,8 +65,8 @@ renderButton = (drink) => {
         return (
             <div>
                 <Header/>
-                <h2 className='tequila-h2'>Tequila Cocktails</h2>
-                <ul className='tequila-list'>
+                <h2 className='rum-h2'>${this.props.match.params.drink} Cocktails</h2>
+                <ul className='rum-list'>
                 {
                         this.state.cocktail.map(cocktail => (
                             <>

@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 
 export default class CocktailItem extends Component {
     render() {
-        console.log('hello world')
         const { cocktail } = this.props;
         return (
             <div className='drink-name'>

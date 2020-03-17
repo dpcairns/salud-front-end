@@ -3,7 +3,7 @@ import request from 'superagent';
 import { withRouter } from 'react-router-dom';
 import Header from './Header.js';
 
-
+// should be capitalized: FavoritesList
 export default withRouter(class favoritesList extends Component {
     state = {
         favorites:[]

@@ -58,6 +58,7 @@ renderButton = (drink) => {
 }
 render() {
     return (
+        //this looks a lot like the SearchList component render method
         <div>
                 
                 <ul className='random-list'>

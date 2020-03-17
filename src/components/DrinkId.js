@@ -1,15 +1,18 @@
 import React, { Component } from 'react'
 import '../drinkID.css';
+
+// very cool function! it should, however, be defined outside the class, since it doesn't depend on the class to work
+const makeDrinkStrings = (ingredientArray, measurementArray) => {
+    return ingredientArray.map((ingredient, i) => {
+        if (ingredient !== null ) {
+        return ingredient + ' ' + measurementArray[i]
+        }
+    })
+    }
 export default class DrinkId extends Component {
     render() {
         const { cocktail } = this.props;
-        const makeDrinkStrings = (ingredientArray, measurementArray) => {
-            return ingredientArray.map((ingredient, i) => {
-              if (ingredient !== null ) {
-                return ingredient + ' ' + measurementArray[i]
-              }
-            })
-          }
+
         const stringArray = makeDrinkStrings(cocktail.Ingredients, cocktail.Measurement) 
         const elementArray = stringArray.map(string => (
           <li>{string}</li>

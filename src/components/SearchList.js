@@ -56,6 +56,7 @@ renderButton = (drink) => {
 }
 
     render() {
+    //this looks a lot like the Random.js component render method
         return (
             <div>
                 <h2 className='search-h2'> Cocktails</h2>

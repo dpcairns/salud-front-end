@@ -4,6 +4,14 @@ import RandomList from './components/Random.js'
  import SearchBar from './components/SearchBar.js';
 import Header from './components/Header.js';
 
+// no need to define this in the class, since it doesn't need anything from the class. better to define it with all the other api calls in api.js
+
+const getFavorites = () => {
+    const user = JSON.parse(localStorage.getItem('user'))
+
+    request.get('https://mighty-plateau-34350.herokuapp.com/favorites')
+    .set('Authorization', user.token); 
+}
 
 export default class Home extends Component {
     state= {
@@ -12,16 +20,7 @@ export default class Home extends Component {
         favorites:[]
     }
 
-    async componentDidMount() {
-
-        const user = JSON.parse(localStorage.getItem('user'))
-        // const getSearchList = () => request.get(`https://mighty-plateau-34350.herokuapp.com/name/${this.props.match.params.name}`)
-        //     .set('Authorization', user.token);
-
-        const getFavorites = () => request.get('https://mighty-plateau-34350.herokuapp.com/favorites')
-            .set('Authorization', user.token); 
-      
-    
+    async componentDidMount() {    
     const fave = await getFavorites()
     // const data = await getSearchList()
     // console.log(data.body)
@@ -54,6 +53,7 @@ handleSearch = async e => {
             handleChange={this.handleChange}
           />
              <div className='random'>
+                // nice spreadin'!
                 <RandomList {...this.props}/>
             </div>
             </div>
